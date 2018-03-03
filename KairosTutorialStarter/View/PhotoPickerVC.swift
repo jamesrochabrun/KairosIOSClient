@@ -11,16 +11,17 @@ import Photos
 
 private enum AnalyzedStatus {
     case analyzing
-    case analyzed
+    case analyzed(String)
+    case error(String)
     
     var textStatus: String {
         switch self {
-        case .analyzing: return "Analyzing..."
-        case .analyzed: return ""
+        case .analyzing: return "Analyzing ..."
+        case .analyzed(let analyzed): return analyzed
+        case .error(let error): return error
         }
     }
 }
-
 
 class PhotoPickerVC: UIViewController {
 
@@ -80,7 +81,6 @@ extension PhotoPickerVC: PhotoPickerManagerDelegate {
     
     func manager(_ manager: PhotoPickerManager, didPickImage image: UIImage, asset: PHAsset?) {
         photoImageView.image = image
-        setUIForResponse(.analyzed)
         manager.dismissPhotoPicker(animated: true, completion: nil)
     }
 }
