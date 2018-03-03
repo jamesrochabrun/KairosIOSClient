@@ -11,16 +11,17 @@ import Photos
 
 private enum AnalyzedStatus {
     case analyzing
-    case analyzed
+    case analyzed(String)
+    case error(String)
     
     var textStatus: String {
         switch self {
-        case .analyzing: return "Analyzing..."
-        case .analyzed: return ""
+        case .analyzing: return "Analyzing ..."
+        case .analyzed(let analyzed): return analyzed
+        case .error(let error): return error
         }
     }
 }
-
 
 class PhotoPickerVC: UIViewController {
 
@@ -78,12 +79,30 @@ class PhotoPickerVC: UIViewController {
 // MARK: - camera and library picker
 extension PhotoPickerVC: PhotoPickerManagerDelegate {
     
-    func manager(_ manager: PhotoPickerManager, didPickImage image: UIImage, asset: PHAsset?) {
-        photoImageView.image = image
-        setUIForResponse(.analyzed)
+    func manager(_ manager: PhotoPickerManager, didPickImage image: UIImage) {
+        
+        self.photoImageView.image = image
+        KairosAPI.sharedInstance.detect(image) { [unowned self] result in
+            switch result {
+            case .success(let analyzis):
+                self.setUIForResponse(.analyzed(analyzis))
+            case .error(let error):
+                self.setUIForResponse(.error(error))
+            }
+        }
         manager.dismissPhotoPicker(animated: true, completion: nil)
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
