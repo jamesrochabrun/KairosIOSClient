@@ -25,9 +25,20 @@ private enum AnalyzedStatus {
 class PhotoPickerVC: UIViewController {
 
     // MARK: UI
-    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var thumbnailImageView: UIImageView! {
+        didSet {
+            thumbnailImageView.layer.borderColor = UIColor.white.cgColor
+            thumbnailImageView.layer.borderWidth = 2.5
+        }
+    }
+    @IBOutlet weak var photoImageView: UIImageView! {
+        didSet {
+            photoImageView.layer.borderColor = UIColor.white.cgColor
+            photoImageView.layer.borderWidth = 2.5
+            photoImageView.layer.cornerRadius = 15
+        }
+    }
     @IBOutlet weak var shotButton: UIButton!
-    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var analyzedTextLabel: UILabel!
     
     
