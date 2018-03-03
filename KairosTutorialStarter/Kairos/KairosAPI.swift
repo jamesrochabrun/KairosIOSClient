@@ -35,18 +35,6 @@ public class KairosAPI {
         return base64String!
     }
     
-    // use this for file paths
-    public func convertImageFileToBase64String(file: String) -> String {
-        
-        let imgData = try! Data(contentsOf: (URL(string: file))!)
-        let image = UIImage(data: imgData)
-        
-        // let image = UIImage(named: file)
-        let imageData = UIImageJPEGRepresentation(image!, 0)
-        let base64String = imageData?.base64EncodedString(options:[])
-        return base64String!
-    }
-    
     // Kairos API - HTTP Request
     public func send(url:String, data: Dictionary<String, Any>? = [:], httpType: String, taskCallback: @escaping (Bool, AnyObject, AnyObject?) -> ()) -> Void {
         

@@ -19,8 +19,6 @@ extension KairosAPI {
     typealias CompletionHandler = (Response<String>) -> Void
     func detect(_ image: UIImage, completion: @escaping CompletionHandler )  {
         
-        //    func exampleDetect(_ image: UIImage) {
-        
         let base64ImageData = KairosAPI.sharedInstance.convertImageToBase64String(image)
         // setup json request params, with base64 data
         let jsonBody = [
@@ -41,13 +39,6 @@ extension KairosAPI {
                     completion(.error("Error - Detect: unable to get image data"))
                     return
             }
-////
-//            if let image = ((data as? [String : AnyObject])!["images"])! as? [AnyObject] {
-//                // get root image and primary key objects
-//
-//                let firstImage = image[0]
-//                let faces = ((firstImage as? [String : AnyObject])?["faces"])! as! [[String : AnyObject]]
-//                let firstFaces = faces[0]
             
                     // get specific enrolled attributes
                     let gender = attributes["gender"]!["type"]!! as! String
