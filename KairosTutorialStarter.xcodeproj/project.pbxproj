@@ -84,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				0949376D204A59D500774ACC /* AppDelegate.swift */,
+				09493796204A871700774ACC /* Kairos */,
+				09493791204A5C1900774ACC /* View */,
 				09493790204A5C0E00774ACC /* Model */,
 				09493771204A59D500774ACC /* Main.storyboard */,
 				09493777204A59D500774ACC /* Assets.xcassets */,
@@ -106,7 +108,6 @@
 		09493790204A5C0E00774ACC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				09493791204A5C1900774ACC /* View */,
 				09493792204A5C3700774ACC /* PhotoPickerManager.swift */,
 			);
 			path = Model;
@@ -119,6 +120,13 @@
 				09493794204A842B00774ACC /* DetectionVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		09493796204A871700774ACC /* Kairos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Kairos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
