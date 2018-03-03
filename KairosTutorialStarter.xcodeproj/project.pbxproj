@@ -16,6 +16,7 @@
 		09493786204A59D500774ACC /* KairosTutorialStarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493785204A59D500774ACC /* KairosTutorialStarterTests.swift */; };
 		09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493792204A5C3700774ACC /* PhotoPickerManager.swift */; };
 		09493795204A842B00774ACC /* DetectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493794204A842B00774ACC /* DetectionVC.swift */; };
+		0949379C204AEEF200774ACC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949379B204AEEF200774ACC /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		09493787204A59D500774ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09493792204A5C3700774ACC /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		09493794204A842B00774ACC /* DetectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionVC.swift; sourceTree = "<group>"; };
+		0949379B204AEEF200774ACC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				09493792204A5C3700774ACC /* PhotoPickerManager.swift */,
+				0949379B204AEEF200774ACC /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				0949376E204A59D500774ACC /* AppDelegate.swift in Sources */,
 				09493795204A842B00774ACC /* DetectionVC.swift in Sources */,
 				09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */,
+				0949379C204AEEF200774ACC /* Response.swift in Sources */,
 				09493776204A59D500774ACC /* KairosTutorialStarter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
