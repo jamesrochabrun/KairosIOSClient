@@ -14,6 +14,7 @@
 		09493778204A59D500774ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09493777204A59D500774ACC /* Assets.xcassets */; };
 		0949377B204A59D500774ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09493779204A59D500774ACC /* LaunchScreen.storyboard */; };
 		09493786204A59D500774ACC /* KairosTutorialStarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493785204A59D500774ACC /* KairosTutorialStarterTests.swift */; };
+		09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493792204A5C3700774ACC /* PhotoPickerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		09493781204A59D500774ACC /* KairosTutorialStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosTutorialStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09493785204A59D500774ACC /* KairosTutorialStarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KairosTutorialStarterTests.swift; sourceTree = "<group>"; };
 		09493787204A59D500774ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09493792204A5C3700774ACC /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				0949376D204A59D500774ACC /* AppDelegate.swift */,
-				0949376F204A59D500774ACC /* ViewController.swift */,
+				09493790204A5C0E00774ACC /* Model */,
 				09493771204A59D500774ACC /* Main.storyboard */,
 				09493777204A59D500774ACC /* Assets.xcassets */,
 				09493779204A59D500774ACC /* LaunchScreen.storyboard */,
@@ -97,6 +99,23 @@
 				09493787204A59D500774ACC /* Info.plist */,
 			);
 			path = KairosTutorialStarterTests;
+			sourceTree = "<group>";
+		};
+		09493790204A5C0E00774ACC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09493791204A5C1900774ACC /* View */,
+				09493792204A5C3700774ACC /* PhotoPickerManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09493791204A5C1900774ACC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0949376F204A59D500774ACC /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +223,7 @@
 			files = (
 				09493770204A59D500774ACC /* ViewController.swift in Sources */,
 				0949376E204A59D500774ACC /* AppDelegate.swift in Sources */,
+				09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */,
 				09493776204A59D500774ACC /* KairosTutorialStarter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
