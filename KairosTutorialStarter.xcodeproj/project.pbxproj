@@ -16,6 +16,7 @@
 		09493786204A59D500774ACC /* KairosTutorialStarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493785204A59D500774ACC /* KairosTutorialStarterTests.swift */; };
 		09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493792204A5C3700774ACC /* PhotoPickerManager.swift */; };
 		09493795204A842B00774ACC /* DetectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493794204A842B00774ACC /* DetectionVC.swift */; };
+		09493798204A87C800774ACC /* KairosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09493797204A87C800774ACC /* KairosAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		09493787204A59D500774ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09493792204A5C3700774ACC /* PhotoPickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerManager.swift; sourceTree = "<group>"; };
 		09493794204A842B00774ACC /* DetectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionVC.swift; sourceTree = "<group>"; };
+		09493797204A87C800774ACC /* KairosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KairosAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		09493796204A871700774ACC /* Kairos */ = {
 			isa = PBXGroup;
 			children = (
+				09493797204A87C800774ACC /* KairosAPI.swift */,
 			);
 			path = Kairos;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09493770204A59D500774ACC /* PhotoPickerVC.swift in Sources */,
+				09493798204A87C800774ACC /* KairosAPI.swift in Sources */,
 				0949376E204A59D500774ACC /* AppDelegate.swift in Sources */,
 				09493795204A842B00774ACC /* DetectionVC.swift in Sources */,
 				09493793204A5C3700774ACC /* PhotoPickerManager.swift in Sources */,
